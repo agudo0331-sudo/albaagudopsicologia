@@ -339,13 +339,6 @@ ul { list-style: none; }
   will-change: opacity, transform;
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
-/* Ajuste para cuando no hay imágenes en los proyectos */
-.project-detail {
-  display: block; /* Quita las columnas */
-  max-width: 800px; /* Centra el texto para que no sea muy ancho */
-  margin: 0 auto 6rem auto; /* Centra el bloque en la página */
-  padding: 0 1.5rem;
-}
 
 /* Quita la regla que pone el texto a un lado en pantallas grandes */
 @media (min-width: 900px) {
