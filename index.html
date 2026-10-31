@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alba Agudo G. | Psicología, educación e igualdad</title>
+  <meta name="description" content="Psicóloga graduada por la UNED, especializada en salud, intervención psicoeducativa e igualdad de género." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       PORTADA (LANDING)
+       ========================================== -->
+  <main class="landing-body" id="inicio">
+    <div class="landing-bg" aria-hidden="true"></div>
+    
+    <div class="landing-container">
+      <header class="landing-header">
+        <h1 class="landing-name">Alba Agudo Garcia</h1>
+        <p class="landing-subtitle">Psicología · Educación · Igualdad</p>
+      </header>
+
+      <nav class="landing-actions">
+        <!-- Botón Sobre mí -->
+        <a href="#sobre-mi" class="landing-btn">Sobre mí</a>
+
+        <!-- Botón Proyectos con desplegable -->
+        <div class="dropdown" id="dropdownProyectos">
+          <button class="landing-btn dropdown-toggle" id="dropdownToggle" aria-expanded="false" aria-controls="dropdownMenu">
+            Mis proyectos
+            <svg class="dropdown-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          
+          <div class="dropdown-menu" id="dropdownMenu" role="menu">
+            <a href="#punto-y-aparte" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__title">Punto y aparte</span>
+              <span class="dropdown-item__desc">Bienestar adolescente</span>
+            </a>
+            <a href="#sin-manual" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__title">Sin manual</span>
+              <span class="dropdown-item__desc">Igualdad y prevención</span>
+            </a>
+            <a href="#sin-tutela" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__title">Sin tutela</span>
+              <span class="dropdown-item__desc">Empoderamiento y autonomía</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <a href="#sobre-mi" class="landing-scroll" aria-label="Bajar">
+      <span>Desliza para conocerme</span>
+      <div class="scroll-line"></div>
+    </a>
+  </main>
+
+  <!-- ==========================================
+       SECCIÓN: SOBRE MÍ
+       ========================================== -->
+  <section class="section section--beige" id="sobre-mi">
+    <div class="container about-grid">
+      <div class="reveal about-copy">
+        <p class="eyebrow">Sobre mí</p>
+        <h2>Psicología con mirada educativa y social.</h2>
+        <p>
+          Me gradué en Psicología por la UNED con mención en Psicología de la Salud e Intervención en Trastornos Mentales y del Comportamiento. Mi recorrido profesional se ha orientado siempre hacia la misma pregunta: cómo acompañar a las personas a comprender lo que les pasa y a construir herramientas reales para avanzar.
+        </p>
+        <p>
+          Trabajo en la intersección entre la psicología, la educación y la intervención social. Me interesa especialmente el diseño de proyectos que transformen necesidades detectadas en recursos concretos: talleres, programas, materiales y espacios de acompañamiento que promuevan bienestar, autonomía y participación.
+        </p>
+        <p>
+          A lo largo de mi trayectoria he acompañado a alumnado con necesidades educativas especiales, he diseñado programas de bienestar adolescente y de igualdad de género, y he trabajado con mujeres en procesos de empoderamiento. Mi enfoque combina sensibilidad, evidencia y creatividad aplicada.
+        </p>
+        
+        <ul class="stats">
+          <li><strong>UNED</strong><span>Grado en Psicología</span></li>
+          <li><strong>3</strong><span>proyectos propios</span></li>
+          <li><strong>NEE</strong><span>experiencia en centros</span></li>
+        </ul>
+        
+        <a href="#contacto" class="btn btn--primary">Hablemos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN: PROYECTOS (Detallados)
+       ========================================== -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Mis proyectos</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" id="punto-y-aparte">
+          <span class="tag">Bienestar adolescente</span>
+          <h3>Punto y aparte</h3>
+          <p>Proyecto de bienestar adolescente orientado a facilitar el acceso a información, recursos de apoyo y orientación educativa.</p>
+          <p>Incluye el desarrollo de una propuesta digital con herramientas de autoexploración del bienestar, recursos adaptados a su edad y vías privadas para solicitar acompañamiento sin sentirse expuestos.</p>
+          <ul class="card__list">
+            <li>Dirigido a adolescentes y familias.</li>
+            <li>Metodología digital y presencial.</li>
+            <li>Espacio seguro y confidencial.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--secondary">Solicitar información</a>
+        </article>
+
+        <article class="project-card reveal" id="sin-manual">
+          <span class="tag">Igualdad</span>
+          <h3>Sin manual</h3>
+          <p>Talleres de igualdad de género y prevención de la violencia dirigidos a adolescentes de 3.º y 4.º de ESO.</p>
+          <p>Elaboración de dinámicas participativas sobre estereotipos de género, presión estética, mitos del amor romántico, límites personales y conductas de control.</p>
+          <ul class="card__list">
+            <li>Evaluación mediante cuestionarios iniciales y finales.</li>
+            <li>Dinámicas adaptadas al entorno escolar.</li>
+            <li>Prevención activa de la violencia.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--secondary">Solicitar este taller</a>
+        </article>
+
+        <article class="project-card reveal" id="sin-tutela">
+          <span class="tag">Empoderamiento</span>
+          <h3>Sin tutela</h3>
+          <p>Programa de intervención socioeducativa con mujeres para promover la autonomía personal y el empoderamiento desde una perspectiva de género.</p>
+          <p>Planificación de sesiones participativas sobre identidad, toma de decisiones, establecimiento de límites, redes de apoyo y construcción del proyecto de vida.</p>
+          <ul class="card__list">
+            <li>Dirigido a mujeres y entidades sociales.</li>
+            <li>Enfoque comunitario y de red.</li>
+            <li>Construcción de proyecto de vida.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--secondary">Solicitar programa</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN: CONTACTO
+       ========================================== -->
+  <section class="section section--beige" id="contacto">
+    <div class="container grid-2">
+      <div class="reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de tu proyecto o necesidad</h2>
+        <p>Si eres un centro educativo, una entidad, o una persona buscando acompañamiento, escríbeme. Te responderé en 24–48h.</p>
+        <ul class="contact-info">
+          <li><strong>Email:</strong> <a href="mailto:albaagudo.psicologia@gmail.com">albaagudo.psicologia@gmail.com</a></li>
+          <li><strong>Modalidad:</strong> Online y presencial</li>
+          <li><strong>Ubicación:</strong> Madrid, España</li>
+        </ul>
+      </div>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+          <div class="form__field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+        <div class="form__field">
+          <label for="motivo">Motivo del contacto</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Selecciona una opción…</option>
+            <option>Solicitar información sobre un proyecto</option>
+            <option>Contratar un taller para mi centro/entidad</option>
+            <option>Orientación psicológica o educativa</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Alba Agudo García</p>
+        <p class="footer__muted">Psicóloga · Intervención psicoeducativa · Igualdad</p>
+      </div>
+      <div>
+        <p class="footer__title">Navegación</p>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Legal</p>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Aviso legal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Redes</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/alba-agudo-garcía-076466183?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Alba Agudo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
